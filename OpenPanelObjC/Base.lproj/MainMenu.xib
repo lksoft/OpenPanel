@@ -13,7 +13,7 @@
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
-        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="OpenPanelIssue" customModuleProvider="target">
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate">
             <connections>
                 <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
             </connections>
@@ -21,11 +21,11 @@
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
         <menu title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
             <items>
-                <menuItem title="OpenPanelIssue" id="1Xt-HY-uBw">
+                <menuItem title="OpenPanelObjC" id="1Xt-HY-uBw">
                     <modifierMask key="keyEquivalentModifierMask"/>
-                    <menu key="submenu" title="OpenPanelIssue" systemMenu="apple" id="uQy-DD-JDr">
+                    <menu key="submenu" title="OpenPanelObjC" systemMenu="apple" id="uQy-DD-JDr">
                         <items>
-                            <menuItem title="About OpenPanelIssue" id="5kV-Vb-QxS">
+                            <menuItem title="About OpenPanelObjC" id="5kV-Vb-QxS">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>
                                     <action selector="orderFrontStandardAboutPanel:" target="-1" id="Exp-CZ-Vem"/>
@@ -39,7 +39,7 @@
                                 <menu key="submenu" title="Services" systemMenu="services" id="hz9-B4-Xy5"/>
                             </menuItem>
                             <menuItem isSeparatorItem="YES" id="4je-JR-u6R"/>
-                            <menuItem title="Hide OpenPanelIssue" keyEquivalent="h" id="Olw-nP-bQN">
+                            <menuItem title="Hide OpenPanelObjC" keyEquivalent="h" id="Olw-nP-bQN">
                                 <connections>
                                     <action selector="hide:" target="-1" id="PnN-Uc-m68"/>
                                 </connections>
@@ -57,7 +57,7 @@
                                 </connections>
                             </menuItem>
                             <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
-                            <menuItem title="Quit OpenPanelIssue" keyEquivalent="q" id="4sb-4s-VLi">
+                            <menuItem title="Quit OpenPanelObjC" keyEquivalent="q" id="4sb-4s-VLi">
                                 <connections>
                                     <action selector="terminate:" target="-1" id="Te7-pn-YzF"/>
                                 </connections>
@@ -670,7 +670,7 @@
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <menu key="submenu" title="Help" systemMenu="help" id="F2S-fz-NVQ">
                         <items>
-                            <menuItem title="OpenPanelIssue Help" keyEquivalent="?" id="FKE-Sm-Kum">
+                            <menuItem title="OpenPanelObjC Help" keyEquivalent="?" id="FKE-Sm-Kum">
                                 <connections>
                                     <action selector="showHelp:" target="-1" id="y7X-2Q-9no"/>
                                 </connections>
@@ -681,7 +681,7 @@
             </items>
             <point key="canvasLocation" x="200" y="121"/>
         </menu>
-        <window title="OpenPanelIssue" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
+        <window title="OpenPanelObjC" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="335" y="390" width="480" height="360"/>
@@ -690,32 +690,20 @@
                 <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Cgl-BF-OWk">
-                        <rect key="frame" x="188" y="195" width="105" height="32"/>
-                        <buttonCell key="cell" type="push" title="Swift Async" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="GEA-Mn-Nm3">
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="9bh-di-blO">
+                        <rect key="frame" x="188" y="163" width="104" height="32"/>
+                        <buttonCell key="cell" type="push" title="Open Panel" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="PYC-xF-pPJ">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="selectWorkspaceAsync:" target="Voe-Tx-rLC" id="onp-MB-9m9"/>
-                        </connections>
-                    </button>
-                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Pbq-0P-joA">
-                        <rect key="frame" x="191" y="163" width="99" height="32"/>
-                        <buttonCell key="cell" type="push" title="Swift Sync" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="mO7-zn-Fne">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
-                        </buttonCell>
-                        <connections>
-                            <action selector="selectWorkspaceCompletion:" target="Voe-Tx-rLC" id="WV0-bl-ArW"/>
+                            <action selector="openPanel:" target="Voe-Tx-rLC" id="NwB-Fz-98T"/>
                         </connections>
                     </button>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="Pbq-0P-joA" firstAttribute="top" secondItem="Cgl-BF-OWk" secondAttribute="bottom" constant="12" symbolic="YES" id="KdZ-mM-Lxi"/>
-                    <constraint firstItem="Pbq-0P-joA" firstAttribute="centerY" secondItem="EiT-Mj-1SZ" secondAttribute="centerY" id="SFq-Pu-rAs"/>
-                    <constraint firstItem="Cgl-BF-OWk" firstAttribute="centerX" secondItem="EiT-Mj-1SZ" secondAttribute="centerX" id="q38-Dz-VbK"/>
-                    <constraint firstItem="Pbq-0P-joA" firstAttribute="centerX" secondItem="EiT-Mj-1SZ" secondAttribute="centerX" id="rde-4W-85v"/>
+                    <constraint firstItem="9bh-di-blO" firstAttribute="centerX" secondItem="EiT-Mj-1SZ" secondAttribute="centerX" id="Ptf-LF-Hc5"/>
+                    <constraint firstItem="9bh-di-blO" firstAttribute="centerY" secondItem="EiT-Mj-1SZ" secondAttribute="centerY" id="QVW-Qs-HwJ"/>
                 </constraints>
             </view>
             <point key="canvasLocation" x="200" y="400"/>
